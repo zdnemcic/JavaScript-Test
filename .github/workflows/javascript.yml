@@ -8,13 +8,13 @@ jobs:
 
 
     steps: 
-    - users: actions/checkout@1
+    - uses: actions/checkout@v1
     - name: Use Node.js 12.X
       uses: actions/setup-node@v1
       with: 
         node-version: "12.x"
     -name: npm install, and test 
-      run: 
+      run: |
         npm install
         npm test
       env: 
