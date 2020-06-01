@@ -1,0 +1,668 @@
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (todo_gulp)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to D:\Algebra\JS\TODO_gulp\package.json:
+
+{
+  "name": "todo_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm i gulp
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+
++ gulp@4.0.2
+added 319 packages from 223 contributors and audited 320 packages in 24.918s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp
+[17:47:42] No gulpfile found
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm install --save gulp-babel @babel/core @babel/preset-env
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gulp-babel@8.0.0
++ @babel/core@7.10.1
++ @babel/preset-env@7.10.1
+added 142 packages from 36 contributors and audited 462 packages in 17.438s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm i gulp-concat
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gulp-concat@2.6.1
+added 3 packages from 38 contributors and audited 465 packages in 4.219s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm i gulp-strip-debug
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gulp-strip-debug@3.0.0
+added 14 packages from 86 contributors and audited 479 packages in 5.571s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm i gulp-noop
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gulp-noop@1.0.0
+added 1 package from 1 contributor and audited 480 packages in 3.837s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[18:29:19] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[18:29:19] Starting 'js'...
+[18:29:20] 'js' errored after 1.21 s
+[18:29:20] SyntaxError in plugin "gulp-babel"
+Message:
+    D:\Algebra\JS\TODO_gulp\src\js\script.js: Support for the experimental syntax 'classProperties' isn't currently enabled (26:16):
+
+  24 |   }
+  25 |
+> 26 |   saveItemList = () => {
+     |                ^
+  27 |     const listItems = document.querySelectorAll("#todoList li");
+  28 |
+  29 |     const listItemsArr = Array.from(listItems);
+
+Add @babel/plugin-proposal-class-properties (https://git.io/vb4SL) to the 'plugins' section of your Babel config to enable transformation.
+If you want to leave it as-is, add @babel/plugin-syntax-class-properties (https://git.io/vb4yQ) to the 'plugins' section to enable parsing.
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ ^C
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[18:41:22] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[18:41:22] Starting 'js'...
+[18:41:22] Finished 'js' after 602 ms
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:23:25] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:23:25] Starting 'js'...
+[19:23:26] Finished 'js' after 936 ms
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:24:46] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:24:46] Starting 'js'...
+[19:24:47] Finished 'js' after 930 ms
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm i terser
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ terser@4.7.0
+added 5 packages from 38 contributors and audited 485 packages in 5.97s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm i gulp-terser
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gulp-terser@1.2.0
+added 2 packages from 2 contributors and audited 487 packages in 5.222s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm uninstall terser
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+audited 487 packages in 4.338s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:35:37] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:35:37] Starting 'js'...
+[19:35:38] Finished 'js' after 927 ms
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:36:59] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:36:59] Starting 'js'...
+[19:37:00] Finished 'js' after 1.02 s
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ npm i gulp-rename
+npm WARN todo_gulp@1.0.0 No description
+npm WARN todo_gulp@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ gulp-rename@2.0.0
+added 1 package from 1 contributor and audited 488 packages in 5.192s
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:44:29] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:44:29] Starting 'js'...
+[19:44:30] Finished 'js' after 1.02 s
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:46:06] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:46:06] Starting 'js'...
+[19:46:07] Finished 'js' after 1.01 s
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:47:26] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:47:26] Starting 'js'...
+[19:47:27] Finished 'js' after 1.03 s
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:54:02] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:54:02] Starting 'js'...
+[19:54:02] 'js' errored after 37 ms
+[19:54:02] SyntaxError in plugin "gulp-strip-debug"
+Message:
+    Unexpected token =
+Details:
+    index: 595
+    lineNumber: 26
+    column: 16
+    fileName: D:\Algebra\JS\TODO_gulp\src\js\bundle.js
+    domainEmitter: [object Object]
+    domainThrown: false
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:55:21] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:55:21] Starting 'js'...
+[19:55:21] Finished 'js' after 32 ms
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:57:20] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:57:20] Starting 'js'...
+[19:57:20] 'js' errored after 36 ms
+[19:57:20] SyntaxError in plugin "gulp-strip-debug"
+Message:
+    Unexpected token =
+Details:
+    index: 595
+    lineNumber: 26
+    column: 16
+    fileName: D:\Algebra\JS\TODO_gulp\src\js\bundle.js
+    domainEmitter: [object Object]
+    domainThrown: false
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[19:58:45] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[19:58:45] Starting 'js'...
+[19:58:45] Finished 'js' after 85 ms
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[20:00:09] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[20:00:09] Starting 'js'...
+[20:00:10] Finished 'js' after 1.01 s
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ gulp js
+[20:06:20] Using gulpfile D:\Algebra\JS\TODO_gulp\gulpfile.js
+[20:06:20] Starting 'js'...
+[20:06:20] Finished 'js' after 86 ms
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/TODO_gulp
+$ cd ..
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS
+$ cd JSTest/
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm init
+
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (jstest) version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to D:\Algebra\JS\JSTest\package.json:
+
+{
+  "name": "jstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm i --save-dev jest
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^2.1.2 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN jstest@1.0.0 No description
+npm WARN jstest@1.0.0 No repository field.
+
++ jest@26.0.1
+added 504 packages from 343 contributors and audited 505 packages in 42.764s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In D:\Algebra\JS\JSTest
+  2 files checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 2 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T18_55_56_402Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In D:\Algebra\JS\JSTest
+  2 files checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 2 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T18_58_10_507Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In D:\Algebra\JS\JSTest
+  3 files checked.
+  testMatch: **/__tests__/**/*.[jt]s?(x), **/?(*.)+(spec|test).[tj]s?(x) - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 3 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T18_58_58_170Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+FAIL __tests__/sum.js
+  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (node_modules/@jest/core/build/TestScheduler.js:173:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        5.229 s
+Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T18_59_43_383Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+PASS __tests__/sum.js
+  √ pero (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.129 s
+Ran all test suites.
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+FAIL __tests__/sum.js
+  ● Test suite failed to run
+
+    Cannot find module './src/js/sum' from '__tests__/sum.js'
+
+    > 1 | const sum = require('./src/js/sum');
+        |             ^
+      2 |
+      3 | test('pero', () => {
+      4 |     expect(sum(1,2)).toBe(2);
+
+      at Resolver.resolveModule (node_modules/jest-resolve/build/index.js:308:11)
+      at Object.<anonymous> (__tests__/sum.js:1:13)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        2.143 s
+Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T19_08_25_970Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+FAIL __tests__/sum.js
+  ● Test suite failed to run
+
+    Cannot find module './src/js/sum' from '__tests__/sum.js'
+
+    > 1 | const sum = require('./src/js/sum');
+        |             ^
+      2 |
+      3 | test('pero', () => {
+      4 |     expect(sum(1,2)).toBe(2);
+
+      at Resolver.resolveModule (node_modules/jest-resolve/build/index.js:308:11)
+      at Object.<anonymous> (__tests__/sum.js:1:13)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.138 s
+Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T19_11_22_197Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+FAIL __tests__/sum.js
+  ● Test suite failed to run
+
+    Cannot find module './src/js/sum' from '__tests__/sum.js'
+
+    > 1 | const sum = require('./src/js/sum');
+        |             ^
+      2 |
+      3 | test('pero', () => {
+      4 |     expect(sum(1,2)).toBe(2);
+
+      at Resolver.resolveModule (node_modules/jest-resolve/build/index.js:308:11)
+      at Object.<anonymous> (__tests__/sum.js:1:13)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.867 s
+Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T19_13_30_551Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+FAIL __tests__/sum.js
+  × pero (6 ms)
+
+  ● pero
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 2
+    Received: 3
+
+      2 |
+      3 | test('pero', () => {
+    > 4 |     expect(sum(1,2)).toBe(2);
+        |                      ^
+      5 | });
+
+      at Object.<anonymous> (__tests__/sum.js:4:22)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        2.16 s
+Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! jstest@1.0.0 test: `jest`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the jstest@1.0.0 test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nemzy\AppData\Roaming\npm-cache\_logs\2020-05-28T19_14_00_423Z-debug.log
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$ npm run test
+
+> jstest@1.0.0 test D:\Algebra\JS\JSTest
+> jest
+
+PASS __tests__/sum.js
+  √ pero (3 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.064 s
+Ran all test suites.
+
+Nemzy@DESKTOP-7TGIDCD MINGW64 /d/Algebra/JS/JSTest
+$
