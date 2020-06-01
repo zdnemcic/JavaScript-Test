@@ -5,7 +5,7 @@ on: [push]
 jobs: 
   test: 
     runs-on: ubuntu-latest
-    
+
 
     steps: 
     - users: actions/checkout@1
@@ -14,7 +14,7 @@ jobs:
       with: 
         node-version: "12.x"
     -name: npm install, and test 
-      run: |
+      run: 
         npm install
         npm test
       env: 
